@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="canonical" href="https://www.estudiobb.com.ar/contacto.html">
+<title>Contacto | Estudio Contable en Bahía Blanca — Estudio Blanes & Asociados</title>
+<meta name="description" content="Contactá a nuestro estudio contable en Bahía Blanca. Consultas sobre monotributo, impuestos, gestión de finanzas, auditoría y consultoría empresarial.">
+<meta name="keywords" content="estudio contable, contador, contadores, contacto, Bahía Blanca, monotributo, finanzas">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contacto | Estudio Contable en Bahía Blanca — Estudio Blanes & Asociados">
+<meta property="og:description" content="Contactá a nuestro estudio contable en Bahía Blanca. Consultas sobre monotributo, impuestos, gestión de finanzas, auditoría y consultoría empresarial.">
+<meta property="og:image" content="https://estudiobb.vercel.app/financiera.jpg">
+<meta property="og:locale" content="es_AR">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Fuentes -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+ :root{
+    --navy:#3c627f;
+    --navy-light:#93c9ef;
+    --cream:#F0F5F9;
+    --stone:#cec9b5c0;
+    --green:#72b5be;
+    --gold:#8FB8D8;
+    --ink:#3C6482;
+    --serif:'DM Serif Display', serif;
+    --sans:'Inter', sans-serif;
+    --maxw:1120px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:var(--sans);
+    background:var(--cream);
+    color:var(--ink);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;text-decoration:none;}
+  ul{list-style:none;}
+  h1,h2,h3,h4{font-family:var(--serif);font-weight:400;color:var(--navy);}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px;}
+
+  /* HEADER */
+  header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(240,245,249,.95);backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--stone);
+  }
+  .header-container{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:24px 24px;
+    width:100%;
+  }
+  .logo{display:flex;flex-direction:column;}
+  .logo-title{
+    font-family:var(--serif);
+    font-size:1.8rem;
+    color:var(--navy);
+    letter-spacing:.01em;
+    line-height:1.1;
+  }
+  .logo-subtitle{
+    font-family:var(--sans);
+    font-size:.90rem;
+    color:var(--green);
+    font-weight:600;
+    letter-spacing:.12em;
+    margin-top:4px;
+    text-transform:none;
+  }
+
+  /* NAVEGACIÓN */
+  .nav{display:flex;align-items:center;gap:36px;margin:0;}
+  .nav > li{position:relative;}
+  .nav > li > a{
+    font-size:1.0rem;
+    font-weight:600;
+    color:var(--ink);
+    letter-spacing:.03em;
+    padding:8px 0;
+    display:inline-block;
+  }
+  .nav > li > a:hover,
+  .nav > li.active > a{color:var(--green);}
+  .caret{
+    display:inline-block;width:0;height:0;
+    margin-left:5px;vertical-align:middle;
+    border-top:4px solid;border-right:4px solid transparent;border-left:4px solid transparent;
+  }
+
+  /* DROPDOWN */
+  .dropdown-menu{
+    display:none;position:absolute;top:100%;right:0;
+    background:#fff;min-width:200px;
+    box-shadow:0 8px 24px rgba(0,0,0,.08);
+    border:1px solid var(--stone);border-radius:2px;
+    padding:8px 0;z-index:100;
+  }
+  .dropdown.open .dropdown-menu{display:block;}
+  .dropdown-menu li a{
+    display:block;padding:8px 18px;font-size:.82rem;color:var(--ink);font-weight:500;
+    transition:background .2s;
+  }
+  .dropdown-menu li a:hover{background:var(--cream);color:var(--navy);}
+  .dropdown-menu .divider{height:1px;margin:4px 0;background:var(--stone);}
+
+  .burger{display:none;background:none;border:none;font-size:1.5rem;color:var(--navy);cursor:pointer;}
+
+  @media (max-width:960px){
+    .header-container{padding:14px 20px;}
+    .navHeaderCollapse{
+      position:fixed;top:68px;left:0;right:0;
+      background:var(--cream);padding:20px;
+      border-bottom:1px solid var(--stone);display:none;
+    }
+    .navHeaderCollapse.in{display:block;}
+    .nav{flex-direction:column;align-items:flex-start;gap:16px;}
+    .dropdown-menu{position:relative;top:0;right:auto;left:0;box-shadow:none;border:none;background:transparent;padding-left:14px;}
+    .burger{display:block;}
+  }
+
+  /* BANNER TITULO */
+  .page-title-banner{
+    background:var(--navy);
+    color:var(--cream);
+    padding:40px 0;
+    border-bottom:1px solid var(--stone);
+    overflow:hidden;
+  }
+  .page-title-banner h1{
+    color:var(--cream);
+    font-size:1.5rem;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    opacity:0;
+    transform:translateY(16px);
+    animation:fadeUp .7s ease forwards;
+    animation-delay:.1s;
+  }
+  @keyframes fadeUp{
+    to{opacity:1;transform:translateY(0);}
+  }
+
+  /* FORMULARIO & SECCIÓN CONTACTO */
+  .contact-section{padding:64px 0;}
+  .contact-grid{
+    display:grid;
+    grid-template-columns:1.2fr 1fr;
+    gap:48px;
+  }
+  .contact-form-card{
+    background:#fff;
+    border:1px solid var(--stone);
+    border-radius:4px;
+    padding:40px;
+  }
+  .contact-form-card h2{
+    font-size:1.6rem;
+    margin-bottom:8px;
+  }
+  .contact-form-card p{
+    color:#5a6a70;
+    font-size:.95rem;
+    margin-bottom:28px;
+  }
+
+  .form-group{
+    margin-bottom:20px;
+  }
+  .form-group label{
+    display:block;
+    font-size:.85rem;
+    font-weight:600;
+    color:var(--navy);
+    margin-bottom:6px;
+  }
+  .form-control{
+    width:100%;
+    padding:12px 14px;
+    border:1px solid var(--stone);
+    border-radius:4px;
+    font-family:var(--sans);
+    font-size:.95rem;
+    background:var(--cream);
+    color:var(--ink);
+    transition:border-color .2s;
+  }
+  .form-control:focus{
+    outline:none;
+    border-color:var(--navy);
+    background:#fff;
+  }
+  textarea.form-control{
+    resize:vertical;
+    min-height:120px;
+  }
+
+  .btn-submit{
+    width:100%;
+    background:var(--navy);
+    color:#fff;
+    border:none;
+    padding:14px;
+    border-radius:4px;
+    font-weight:600;
+    font-size:1rem;
+    cursor:pointer;
+    transition:background .2s;
+  }
+  .btn-submit:hover{
+    background:var(--navy-light);
+  }
+  .btn-submit:disabled{
+    background:#93a6ad;
+    cursor:not-allowed;
+  }
+
+  /* MENSAJE DE ESTADO (ÉXITO / ERROR) */
+  .form-status{
+    display:none;
+    margin-top:16px;
+    padding:14px 16px;
+    border-radius:4px;
+    font-size:.92rem;
+    font-weight:500;
+    opacity:0;
+    transform:translateY(-6px);
+    transition:opacity .35s ease, transform .35s ease;
+  }
+  .form-status.success{
+    display:block;
+    background:#eef7f2;
+    color:#2e693e;
+    border:1px solid #c2e2ce;
+  }
+  .form-status.error{
+    display:block;
+    background:#fdf2f2;
+    color:#9b2c2c;
+    border:1px solid #f8b4b4;
+  }
+  .form-status.show{
+    opacity:1;
+    transform:translateY(0);
+  }
+
+  /* INFORMACIÓN DE CONTACTO */
+  .info-card{
+    background:#fff;
+    border:1px solid var(--stone);
+    border-radius:4px;
+    padding:32px;
+    margin-bottom:24px;
+  }
+  .info-card h3{
+    font-size:1.2rem;
+    margin-bottom:16px;
+    border-bottom:2px solid var(--stone);
+    padding-bottom:8px;
+  }
+  .info-item{
+    display:flex;
+    align-items:flex-start;
+    gap:16px;
+    margin-bottom:16px;
+  }
+  .info-icon{
+    font-size:1.2rem;
+    color:var(--green);
+    width:28px;
+    text-align:center;
+    flex-shrink:0;
+  }
+  .info-text strong{
+    display:block;
+    font-size:.85rem;
+    color:var(--navy);
+    text-transform:uppercase;
+    letter-spacing:.05em;
+  }
+  .info-text p, .info-text a{
+    color:#4a5a60;
+    font-size:.95rem;
+  }
+  .info-text a:hover{
+    color:var(--navy);
+  }
+
+  @media (max-width:860px){
+    .contact-grid{grid-template-columns:1fr;}
+    .contact-form-card{padding:24px;}
+  }
+
+  /* Animaciones al hacer scroll */
+  .reveal{
+    opacity:0;
+    transform:translateY(28px);
+    transition:opacity .7s cubic-bezier(.22,1,.36,1), transform .7s cubic-bezier(.22,1,.36,1);
+  }
+  .reveal.visible{
+    opacity:1;
+    transform:translateY(0);
+  }
+  .reveal-group.contact-form-card{transition-delay:0s;}
+  .reveal-group.info-card{transition-delay:.15s;}
+
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:.001ms !important;animation-iteration-count:1 !important;transition-duration:.001ms !important;scroll-behavior:auto !important;}
+    .page-title-banner h1{opacity:1;transform:none;}
+    .reveal{opacity:1;transform:none;}
+  }
+
+  /* FOOTER */
+  footer{
+    background:var(--navy);color:#9db0b6;padding:64px 0 48px;
+    border-top:1px solid rgba(240,245,249,.1);
+  }
+  .foot-container{display:flex;align-items:center;justify-content:space-between;gap:48px;}
+  .foot-brand-col{flex:1.1;}
+  .foot-brand-col .fname{font-family:var(--serif);color:var(--cream);font-size:1.8rem;line-height:1.1;margin-bottom:8px;}
+  .foot-brand-col .fsub{color:var(--green);font-weight:600;font-size:.9rem;letter-spacing:.05em;}
+  .foot-divider{width:1px;align-self:stretch;background:rgba(240,245,249,.2);}
+  .foot-info-col{flex:1.2;display:flex;gap:40px;}
+  .foot-block{flex:1;}
+  .foot-block strong{display:block;font-family:var(--sans);font-size:.78rem;text-transform:uppercase;letter-spacing:.1em;color:var(--green);margin-bottom:12px;}
+  .foot-block p{color:#c7d4d8;font-size:.92rem;line-height:1.6;margin-bottom:4px;}
+  .foot-bottom-bar{
+    max-width:var(--maxw);margin:48px auto 0;padding-top:24px;
+    border-top:1px solid rgba(240,245,249,.1);display:flex;justify-content:space-between;align-items:center;font-size:.82rem;
+  }
+  .foot-bottom-bar a:hover{color:var(--cream);}
+
+  @media (max-width:860px){
+    .foot-container{flex-direction:column;align-items:flex-start;gap:32px;}
+    .foot-divider{width:100%;height:1px;}
+    .foot-info-col{flex-direction:column;gap:24px;width:100%;}
+  }
+
+
+  /* WHATSAPP FLOAT */
+  .wa-float{
+    position:fixed;bottom:22px;right:22px;z-index:60;
+    background:var(--green);color:#fff;width:58px;height:58px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;box-shadow:0 6px 20px rgba(18,59,74,.25);
+    transition:transform .2s;
+  }
+  .wa-float:hover{transform:scale(1.06);}
+
+  /* --- Ajustes responsive adicionales --- */
+  @media (max-width:480px){
+    .logo-title{font-size:1.25rem;}
+    .logo-subtitle{font-size:.62rem;letter-spacing:.05em;}
+    .foot-bottom-bar{flex-direction:column;align-items:flex-start;gap:12px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-container wrap">
+    <a href="index.html" class="logo">
+      <span class="logo-title">Estudio Blanes & Asociados</span>
+      <span class="logo-subtitle">Asesoramiento Contable & Consultoría</span>
+    </a>
+
+    <button class="burger" id="burgerBtn" aria-label="Abrir menú">☰</button>
+
+    <nav class="navHeaderCollapse" id="navHeaderCollapse">
+      <ul class="nav">
+        <li><a href="index.html">INICIO</a></li>
+        <li><a href="quienes-somos.html">QUIENES SOMOS</a></li>
+        <li class="dropdown">
+          <a href="servicios-impositivos.html" class="dropdown-toggle">SERVICIOS <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="servicios-impositivos.html">IMPOSITIVOS</a></li>
+            <li class="divider"></li>
+            <li><a href="servicios-auditoria.html">AUDITORIA</a></li>
+            <li class="divider"></li>
+            <li><a href="servicios-contables.html">CONTABLES</a></li>
+            <li class="divider"></li>
+            <li><a href="servicios-laborales.html">LABORALES</a></li>
+            <li class="divider"></li>
+            <li><a href="servicios-societarios.html">SOCIETARIO</a></li>
+            <li class="divider"></li>
+            <li><a href="servicios-consultoria.html">CONSULTORIA</a></li>
+          </ul>
+        </li>
+        <li class="active"><a href="contacto.html">CONTACTO</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="page-title-banner">
+  <div class="wrap">
+    <h1>CONTACTO</h1>
+  </div>
+</div>
+
+<section class="contact-section">
+  <div class="wrap">
+    <div class="contact-grid">
+
+      <!-- FORMULARIO DE CONTACTO -->
+      <div class="contact-form-card reveal">
+        <h2>Envianos tu consulta</h2>
+        <p>Completá el formulario y nos pondremos en contacto a la brevedad.</p>
+
+        <form id="contactForm">
+
+          <!-- Clave configurada de Web3Forms -->
+          <input type="hidden" name="access_key" value="87ab19f4-32ab-46e2-8ebc-ab38c0512df2">
+
+          <!-- Asunto del correo -->
+          <input type="hidden" name="subject" value="Nuevo mensaje desde la Web - Estudio Blanes & Asociados">
+          <input type="hidden" name="from_name" value="Estudio Blanes&Asociados Web">
+
+          <div class="form-group">
+            <label for="nombre">Nombre completo *</label>
+            <input type="text" id="nombre" name="Nombre" class="form-control" required placeholder="Ej. Juan Pérez">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Correo electrónico *</label>
+            <input type="email" id="email" name="Email" class="form-control" required placeholder="ejemplo@correo.com">
+          </div>
+
+          <div class="form-group">
+            <label for="telefono">Teléfono de contacto</label>
+            <input type="tel" id="telefono" name="Telefono" class="form-control" placeholder="Ej. +54 291 1234567">
+          </div>
+
+          <div class="form-group">
+            <label for="servicio">Servicio de interés</label>
+            <select id="servicio" name="Servicio" class="form-control">
+              <option value="Consulta general">Consulta general</option>
+              <option value="Impositivos">Servicios Impositivos</option>
+              <option value="Auditoría">Servicios de Auditoría</option>
+              <option value="Contables">Servicios Contables</option>
+              <option value="Laborales">Servicios Laborales</option>
+              <option value="Societario">Servicios Societarios</option>
+              <option value="Consultoría">Servicios de Consultoría</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="mensaje">Mensaje *</label>
+            <textarea id="mensaje" name="Mensaje" class="form-control" required placeholder="Escribí aquí tu consulta..."></textarea>
+          </div>
+
+          <button type="submit" id="submitBtn" class="btn-submit">Enviar consulta</button>
+
+          <!-- Mensaje de confirmación en la misma página -->
+          <div id="formStatus" class="form-status"></div>
+        </form>
+      </div>
+
+      <!-- INFORMACIÓN DE CONTACTO ADICIONAL -->
+      <aside class="sidebar">
+        <div class="info-card reveal">
+          <h3>Datos de contacto</h3>
+
+          <div class="info-item">
+            <span class="info-icon">📍</span>
+            <div class="info-text">
+              <strong>Dirección</strong>
+              <p>Belgrano 533<br>Bahía Blanca, Buenos Aires</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <span class="info-icon">📞</span>
+            <div class="info-text">
+              <strong>Teléfono</strong>
+              <p><a href="tel:+542914471111">+54 291 447-1111</a></p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <span class="info-icon">✉️</span>
+            <div class="info-text">
+              <strong>Email</strong>
+              <p><a href="mailto:info@estudiobb.com.ar">info@estudiobb.com.ar</a></p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <span class="info-icon">🕒</span>
+            <div class="info-text">
+              <strong>Horario de atención</strong>
+              <p>Lunes a Viernes de 8:00 a 14:00 hs.</p>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-container">
+    <div class="foot-brand-col">
+      <div class="fname">Estudio Blanes & Asociados</div>
+      <span class="fsub">Asesoramiento Contable & Consultoría</span>
+    </div>
+
+    <div class="foot-divider"></div>
+
+    <div class="foot-info-col">
+      <div class="foot-block">
+        <strong>Oficina Central</strong>
+        <p>Belgrano 533</p>
+        <p>Bahía Blanca, Argentina</p>
+      </div>
+      <div class="foot-block">
+        <strong>Canales de contacto</strong>
+        <p>📞 +54 291 447-1111</p>
+        <p>✉️ info@estudiobb.com.ar</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap foot-bottom-bar">
+    <span>© Estudio Blanes & Asociados. Todos los derechos reservados.</span>
+    <div style="display:flex; gap:20px;">
+      <a href="https://wa.me/5492914471111" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="#top">Volver arriba</a>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5492914471111?text=Hola%2C%20quer%C3%ADa%20hacer%20una%20consulta." target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="#fff"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.28-1.38a9.9 9.9 0 0 0 4.76 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.13-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 18.03a8.2 8.2 0 0 1-4.17-1.14l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.37c0-4.54 3.7-8.24 8.25-8.24a8.19 8.19 0 0 1 5.83 2.42 8.18 8.18 0 0 1 2.41 5.83c0 4.55-3.7 8.21-8.27 8.21zm4.52-6.16c-.25-.12-1.47-.72-1.7-.81-.23-.08-.4-.12-.56.13-.17.25-.65.81-.79.97-.15.17-.29.19-.54.06-.25-.12-1.06-.39-2.01-1.24-.75-.66-1.25-1.48-1.4-1.73-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43-.14-.01-.31-.01-.48-.01-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.57.12.17 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.55.1.47-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.16-.48-.28z"/></svg>
+</a>
+
+<script>
+  // Menú hamburguesa
+  document.getElementById('burgerBtn').addEventListener('click', function(){
+    document.getElementById('navHeaderCollapse').classList.toggle('in');
+  });
+
+  // Dropdown menú
+  document.querySelectorAll('.dropdown-toggle').forEach(function(toggle){
+    toggle.addEventListener('click', function(e){
+      e.preventDefault();
+      var parent = this.parentElement;
+      document.querySelectorAll('.dropdown.open').forEach(function(drop){
+        if(drop !== parent) drop.classList.remove('open');
+      });
+      parent.classList.toggle('open');
+    });
+  });
+
+  document.addEventListener('click', function(e){
+    if(!e.target.closest('.dropdown')){
+      document.querySelectorAll('.dropdown.open').forEach(function(drop){
+        drop.classList.remove('open');
+      });
+    }
+  });
+
+  // Selección automática del servicio si viene por URL (ej. contacto.html?servicio=societario)
+  const urlParams = new URLSearchParams(window.location.search);
+  const servicioParam = urlParams.get('servicio');
+  if (servicioParam) {
+    const select = document.getElementById('servicio');
+    for (let option of select.options) {
+      if (option.value.toLowerCase().includes(servicioParam.toLowerCase())) {
+        option.selected = true;
+        break;
+      }
+    }
+  }
+
+  // ENVÍO ASÍNCRONO DEL FORMULARIO CON FORMATO JSON
+  const contactForm = document.getElementById('contactForm');
+  const submitBtn = document.getElementById('submitBtn');
+  const formStatus = document.getElementById('formStatus');
+
+  contactForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    // Mostrar estado de carga
+    submitBtn.disabled = true;
+    submitBtn.innerText = 'Enviando...';
+    formStatus.classList.remove('show');
+    formStatus.style.display = 'none';
+
+    // Convertir datos del formulario a JSON
+    const formData = new FormData(contactForm);
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: json
+    })
+    .then(async (response) => {
+      let res = await response.json();
+      if (response.status === 200 && res.success) {
+        formStatus.innerText = '✓ ¡Tu mensaje ha sido enviado con éxito! Nos contactaremos a la brevedad.';
+        formStatus.className = 'form-status success';
+        contactForm.reset();
+      } else {
+        formStatus.innerText = 'Error: ' + (res.message || 'No se pudo enviar el mensaje.');
+        formStatus.className = 'form-status error';
+      }
+      // Pequeño delay para que la transición de opacidad se note
+      requestAnimationFrame(function(){
+        formStatus.classList.add('show');
+      });
+    })
+    .catch(error => {
+      console.error('Error en el envío:', error);
+      formStatus.innerText = 'Ocurrió un error al conectar con el servidor. Revisá tu conexión o reintentá más tarde.';
+      formStatus.className = 'form-status error';
+      requestAnimationFrame(function(){
+        formStatus.classList.add('show');
+      });
+    })
+    .finally(() => {
+      submitBtn.disabled = false;
+      submitBtn.innerText = 'Enviar consulta';
+    });
+  });
+
+  // Animaciones al hacer scroll
+  (function(){
+    var revealEls = document.querySelectorAll('.reveal');
+    var scrollObserver = new IntersectionObserver(function(entries, obs){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){
+          entry.target.classList.add('visible');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: .1, rootMargin: '0px 0px -60px 0px' });
+    revealEls.forEach(function(el){ scrollObserver.observe(el); });
+  })();
+</script>
+
+</body>
+</html>

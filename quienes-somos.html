@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="canonical" href="https://www.estudiobb.com.ar/quienes-somos.html">
+<title>Quiénes Somos | Contadores en Bahía Blanca — Estudio Blanes & Asociados</title>
+<meta name="description" content="Conocé a nuestro estudio contable en Bahía Blanca: contadores con más de 50 años de trayectoria en auditoría, finanzas, impuestos y consultoría.">
+<meta name="keywords" content="estudio contable, contador, contadores, Bahía Blanca, Estudio Blanes, trayectoria contable">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Quiénes Somos | Contadores en Bahía Blanca — Estudio Blanes & Asociados">
+<meta property="og:description" content="Conocé a nuestro estudio contable en Bahía Blanca: contadores con más de 50 años de trayectoria en auditoría, finanzas, impuestos y consultoría.">
+<meta property="og:image" content="https://estudiobb.vercel.app/financiera.jpg">
+<meta property="og:locale" content="es_AR">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Fuentes -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --navy:#3c627f;
+    --navy-light:#93c9ef;
+    --cream:#F0F5F9;
+    --stone:#cec9b5c0;
+    --green:#72b5be;
+    --gold:#8FB8D8;
+    --ink:#3C6482;
+    --serif:'DM Serif Display', serif;
+    --sans:'Inter', sans-serif;
+    --maxw:1120px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:var(--sans);
+    background:var(--cream);
+    color:var(--ink);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{display:block;max-width:100%;height:auto;}
+  a{color:inherit;text-decoration:none;}
+  ul{list-style:none;}
+  h1,h2,h3,h4{font-family:var(--serif);font-weight:400;color:var(--navy);}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px;}
+
+  /* HEADER */
+  header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(240,245,249,.95);backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--stone);
+  }
+  .header-container{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:24px 24px;
+    width:100%;
+  }
+  .logo{display:flex;flex-direction:column;}
+  .logo-title{
+    font-family:var(--serif);
+    font-size:1.8rem;
+    color:var(--navy);
+    letter-spacing:.01em;
+    line-height:1.1;
+  }
+  .logo-subtitle{
+    font-family:var(--sans);
+    font-size:.90rem;
+    color:var(--green);
+    font-weight:600;
+    letter-spacing:.12em;
+    margin-top:4px;
+    text-transform:none;
+  }
+
+  /* NAVEGACIÓN */
+  .nav{display:flex;align-items:center;gap:36px;margin:0;}
+  .nav > li{position:relative;}
+  .nav > li > a{
+    font-size:1.0rem;
+    font-weight:600;
+    color:var(--ink);
+    letter-spacing:.03em;
+    padding:8px 0;
+    display:inline-block;
+  }
+  .nav > li > a:hover,
+  .nav > li.active > a{color:var(--green);}
+  .caret{
+    display:inline-block;width:0;height:0;
+    margin-left:5px;vertical-align:middle;
+    border-top:4px solid;border-right:4px solid transparent;border-left:4px solid transparent;
+  }
+
+  /* DROPDOWN */
+  .dropdown-menu{
+    display:none;position:absolute;top:100%;right:0;
+    background:#fff;min-width:200px;
+    box-shadow:0 8px 24px rgba(0,0,0,.08);
+    border:1px solid var(--stone);border-radius:2px;
+    padding:8px 0;z-index:100;
+  }
+  .dropdown.open .dropdown-menu{display:block;}
+  .dropdown-menu li a{
+    display:block;padding:8px 18px;font-size:.82rem;color:var(--ink);font-weight:500;
+    transition:background .2s;
+  }
+  .dropdown-menu li a:hover{background:var(--cream);color:var(--navy);}
+  .dropdown-menu .divider{height:1px;margin:4px 0;background:var(--stone);}
+
+  .burger{display:none;background:none;border:none;font-size:1.5rem;color:var(--navy);cursor:pointer;}
+
+  @media (max-width:960px){
+    .header-container{padding:14px 20px;}
+    .navHeaderCollapse{
+      position:fixed;top:68px;left:0;right:0;
+      background:var(--cream);padding:20px;
+      border-bottom:1px solid var(--stone);display:none;
+    }
+    .navHeaderCollapse.in{display:block;}
+    .nav{flex-direction:column;align-items:flex-start;gap:16px;}
+    .dropdown-menu{position:relative;top:0;right:auto;left:0;box-shadow:none;border:none;background:transparent;padding-left:14px;}
+    .burger{display:block;}
+  }
+
+  /* TITULO DE PÁGINA */
+  .page-title-banner{
+    background:var(--navy);
+    color:var(--cream);
+    padding:40px 0;
+    border-bottom:1px solid var(--stone);
+    overflow:hidden;
+  }
+  .page-title-banner h1{
+    color:var(--cream);
+    font-size:1.5rem;
+    letter-spacing:.03rem;
+    opacity:0;
+    transform:translateY(16px);
+    animation:fadeUp .7s ease forwards;
+    animation-delay:.1s;
+  }
+  @keyframes fadeUp{
+    to{opacity:1;transform:translateY(0);}
+  }
+
+  /* SECCIÓN CONTENIDO */
+  .about-section{padding:64px 0;}
+  .about-text{max-width:76ch;}
+  .about-text h2{
+    font-size:2.0rem;
+    margin-bottom:24px;
+    color:var(--navy);
+  }
+  .about-text p{
+    color:#4a5a60;
+    margin-bottom:16px;
+    font-size:1rem;
+  }
+
+  /* Animaciones al hacer scroll */
+  .reveal{
+    opacity:0;
+    transform:translateY(24px);
+    transition:opacity .7s cubic-bezier(.22,1,.36,1), transform .7s cubic-bezier(.22,1,.36,1);
+  }
+  .reveal.visible{
+    opacity:1;
+    transform:translateY(0);
+  }
+  .about-text.reveal-group h2{
+    opacity:0;
+    transform:translateY(18px);
+    transition:opacity .6s ease, transform .6s ease;
+  }
+  .about-text.reveal-group p{
+    opacity:0;
+    transform:translateY(18px);
+    transition:opacity .6s ease, transform .6s ease;
+  }
+  .about-text.reveal-group.visible h2{
+    opacity:1;transform:translateY(0);
+  }
+  .about-text.reveal-group.visible p{
+    opacity:1;transform:translateY(0);
+  }
+  .about-text.reveal-group.visible p:nth-of-type(1){transition-delay:.10s;}
+  .about-text.reveal-group.visible p:nth-of-type(2){transition-delay:.20s;}
+  .about-text.reveal-group.visible p:nth-of-type(3){transition-delay:.30s;}
+  .about-text.reveal-group.visible p:nth-of-type(4){transition-delay:.40s;}
+
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:.001ms !important;animation-iteration-count:1 !important;transition-duration:.001ms !important;scroll-behavior:auto !important;}
+    .page-title-banner h1{opacity:1;transform:none;}
+    .reveal, .reveal-group h2, .reveal-group p{opacity:1;transform:none;}
+  }
+
+  /* FOOTER */
+  footer{
+    background:var(--navy);color:#9db0b6;padding:64px 0 48px;
+    border-top:1px solid rgba(240,245,249,.1);
+  }
+  .foot-container{display:flex;align-items:center;justify-content:space-between;gap:48px;}
+  .foot-brand-col{flex:1.1;}
+  .foot-brand-col .fname{font-family:var(--serif);color:var(--cream);font-size:1.8rem;line-height:1.1;margin-bottom:8px;}
+  .foot-brand-col .fsub{color:var(--green);font-weight:600;font-size:.9rem;letter-spacing:.05em;}
+  .foot-divider{width:1px;align-self:stretch;background:rgba(240,245,249,.2);}
+  .foot-info-col{flex:1.2;display:flex;gap:40px;}
+  .foot-block{flex:1;}
+  .foot-block strong{display:block;font-family:var(--sans);font-size:.78rem;text-transform:uppercase;letter-spacing:.1em;color:var(--green);margin-bottom:12px;}
+  .foot-block p{color:#c7d4d8;font-size:.92rem;line-height:1.6;margin-bottom:4px;}
+  .foot-bottom-bar{
+    max-width:var(--maxw);margin:48px auto 0;padding-top:24px;
+    border-top:1px solid rgba(240,245,249,.1);display:flex;justify-content:space-between;align-items:center;font-size:.82rem;
+  }
+  .foot-bottom-bar a:hover{color:var(--cream);}
+
+  @media (max-width:860px){
+    .foot-container{flex-direction:column;align-items:flex-start;gap:32px;}
+    .foot-divider{width:100%;height:1px;}
+    .foot-info-col{flex-direction:column;gap:24px;width:100%;}
+  }
+
+  /* WHATSAPP FLOAT */
+  .wa-float{
+    position:fixed;bottom:22px;right:22px;z-index:60;
+    background:var(--green);color:#fff;width:58px;height:58px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;box-shadow:0 6px 20px rgba(18,59,74,.25);
+    transition:transform .2s;
+  }
+  .wa-float:hover{transform:scale(1.06);}
+
+  /* --- Ajustes responsive adicionales --- */
+  @media (max-width:480px){
+    .logo-title{font-size:1.25rem;}
+    .logo-subtitle{font-size:.62rem;letter-spacing:.05em;}
+    .foot-bottom-bar{flex-direction:column;align-items:flex-start;gap:12px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-container wrap">
+    <a href="index.html" class="logo">
+      <span class="logo-title">Estudio Blanes & Asociados</span>
+      <span class="logo-subtitle">Asesoramiento Contable & Consultoría</span>
+    </a>
+
+    <button class="burger" id="burgerBtn" aria-label="Abrir menú">☰</button>
+
+    <nav class="navHeaderCollapse" id="navHeaderCollapse">
+      <ul class="nav">
+        <li><a href="index.html">INICIO</a></li>
+        <li class="active"><a href="quienes-somos.html">QUIENES SOMOS</a></li>
+        <li class="dropdown">
+          <a href="servicios-impositivos.html" class="dropdown-toggle">SERVICIOS <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="servicios-impositivos.html">IMPOSITIVOS</a></li>
+            <li class="divider"></li>
+            <li><a href="servicios-auditoria.html">AUDITORIA</a></li>
+            <li class="divider"></li>
+            <li><a href="servicios-contables.html">CONTABLES</a></li>
+            <li class="divider"></li>
+            <li><a href="servicios-laborales.html">LABORALES</a></li>
+            <li class="divider"></li>
+            <li><a href="servicios-societarios.html">SOCIETARIO</a></li>
+            <li class="divider"></li>
+            <li><a href="servicios-consultoria.html">CONSULTORIA</a></li>
+          </ul>
+        </li>
+        <li><a href="contacto.html">CONTACTO</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="page-title-banner">
+  <div class="wrap">
+    <h1>QUIÉNES SOMOS</h1>
+  </div>
+</div>
+
+<section class="about-section">
+  <div class="wrap">
+    <div class="about-text reveal-group">
+      <h2>ESTUDIO BLANES & ASOCIADOS</h2>
+      <p>Somos un estudio contable con una trayectoria que respalda cada una de nuestras decisiones. Durante más de cinco décadas hemos construido relaciones de confianza basadas en un principio simple: el trato cercano y personalizado es la clave del éxito.</p>
+      <p>Contamos con un equipo de profesionales altamente capacitados en todas las áreas contables, impositivas y financieras, listos para ofrecerte respuestas inteligentes y a la medida de tu negocio, comercio o industria. No creemos en soluciones genéricas: cada cliente recibe un asesoramiento integral, pensado específicamente para sus necesidades y objetivos.</p>
+      <p>Nuestro compromiso va más allá de resolver lo urgente. Trabajamos con una búsqueda permanente de la excelencia, anticipándonos a tus necesidades actuales y futuras, para que puedas planificar el presente y el futuro de tu negocio con tranquilidad y respaldo profesional.</p>
+      <p>Porque en Estudio Blanes & Asociados, tu éxito es nuestro compromiso.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-container">
+    <div class="foot-brand-col">
+      <div class="fname">Estudio Blanes & Asociados</div>
+      <span class="fsub">Asesoramiento Contable & Consultoría</span>
+    </div>
+
+    <div class="foot-divider"></div>
+
+    <div class="foot-info-col">
+      <div class="foot-block">
+        <strong>Oficina Central</strong>
+        <p>Belgrano 533</p>
+        <p>Bahía Blanca, Argentina</p>
+      </div>
+      <div class="foot-block">
+        <strong>Canales de contacto</strong>
+        <p>📞 +54 291 447-1111</p>
+        <p>✉️ info@estudiobb.com.ar</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap foot-bottom-bar">
+    <span>© Estudio Blanes & Asociados. Todos los derechos reservados.</span>
+    <div style="display:flex; gap:20px;">
+      <a href="https://wa.me/5492914471111" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="#top">Volver arriba</a>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5492914471111?text=Hola%2C%20quer%C3%ADa%20consultar%20por%20los%20servicios%20del%20estudio." target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="#fff"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.28-1.38a9.9 9.9 0 0 0 4.76 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.13-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 18.03a8.2 8.2 0 0 1-4.17-1.14l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.37c0-4.54 3.7-8.24 8.25-8.24a8.19 8.19 0 0 1 5.83 2.42 8.18 8.18 0 0 1 2.41 5.83c0 4.55-3.7 8.21-8.27 8.21zm4.52-6.16c-.25-.12-1.47-.72-1.7-.81-.23-.08-.4-.12-.56.13-.17.25-.65.81-.79.97-.15.17-.29.19-.54.06-.25-.12-1.06-.39-2.01-1.24-.75-.66-1.25-1.48-1.4-1.73-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43-.14-.01-.31-.01-.48-.01-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.57.12.17 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.55.1.47-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.16-.48-.28z"/></svg>
+</a>
+
+<script>
+  // Menú móvil
+  document.getElementById('burgerBtn').addEventListener('click', function(){
+    document.getElementById('navHeaderCollapse').classList.toggle('in');
+  });
+
+  // Dropdown de servicios
+  document.querySelectorAll('.dropdown-toggle').forEach(function(toggle){
+    toggle.addEventListener('click', function(e){
+      e.preventDefault();
+      var parent = this.parentElement;
+      document.querySelectorAll('.dropdown.open').forEach(function(drop){
+        if(drop !== parent) drop.classList.remove('open');
+      });
+      parent.classList.toggle('open');
+    });
+  });
+  document.addEventListener('click', function(e){
+    if(!e.target.closest('.dropdown')){
+      document.querySelectorAll('.dropdown.open').forEach(function(drop){
+        drop.classList.remove('open');
+      });
+    }
+  });
+
+  // Animaciones al hacer scroll
+  (function(){
+    var revealEls = document.querySelectorAll('.reveal, .reveal-group');
+    var scrollObserver = new IntersectionObserver(function(entries, obs){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){
+          entry.target.classList.add('visible');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: .15, rootMargin: '0px 0px -60px 0px' });
+    revealEls.forEach(function(el){ scrollObserver.observe(el); });
+  })();
+</script>
+
+</body>
+</html>

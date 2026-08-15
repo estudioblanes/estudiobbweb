@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="canonical" href="https://www.estudiobb.com.ar/">
+<title>Estudio Blanes & Asociados | Estudio Contable en Bahía Blanca</title>
+<meta name="description" content="Estudio contable y de contadores en Bahía Blanca con más de 50 años de trayectoria. Gestión de finanzas, monotributo, impuestos, auditoría y consultoría para empresas y particulares.">
+<meta name="keywords" content="estudio contable, contador, contadores, contabilidad, finanzas, gestión de finanzas, monotributo, impuestos, AFIP, Bahía Blanca">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Estudio Blanes & Asociados | Estudio Contable en Bahía Blanca">
+<meta property="og:description" content="Estudio contable y de contadores en Bahía Blanca con más de 50 años de trayectoria. Gestión de finanzas, monotributo, impuestos, auditoría y consultoría para empresas y particulares.">
+<meta property="og:image" content="https://estudiobb.vercel.app/financiera.jpg">
+<meta property="og:locale" content="es_AR">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Fuentes -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- Datos estructurados para Google (SEO local) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AccountingService",
+  "name": "Estudio Blanes & Asociados",
+  "image": "https://www.estudiobb.com.ar/financiera.jpg",
+  "url": "https://www.estudiobb.com.ar/",
+  "telephone": "+542914471111",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Belgrano 533",
+    "addressLocality": "Bahía Blanca",
+    "addressRegion": "Buenos Aires",
+    "addressCountry": "AR"
+  },
+  "areaServed": "Bahía Blanca, Argentina",
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "opens": "08:00",
+    "closes": "14:00"
+  },
+  "makesOffer": [
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Servicios Impositivos y Monotributo"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Auditoría Contable"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Contabilidad y Gestión de Finanzas"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Liquidación de Sueldos y Gestión Laboral"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Constitución de Sociedades"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Consultoría Financiera y Estratégica"}}
+  ]
+}
+</script>
+
+<style>
+  :root{
+    --navy:#3c627f;
+    --navy-light:#93c9ef;
+    --cream:#F0F5F9;
+    --stone:#c2bfb5a4;
+    --green:#72b5be;
+    --gold:#8FB8D8;
+    --ink:#3C6482;
+    --serif:'DM Serif Display', serif;
+    --sans:'Inter', sans-serif;
+    --maxw:1120px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:var(--sans);
+    background:var(--cream);
+    color:var(--ink);
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  img,svg{display:block;max-width:100%;}
+  a{color:inherit;text-decoration:none;}
+  ul{list-style:none;}
+  h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.15;color:var(--navy);}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px;}
+  .eyebrow{
+    font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--green);font-weight:600;margin-bottom:12px;display:block;
+  }
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;
+    background:var(--navy);color:var(--cream);
+    padding:14px 28px;border-radius:2px;font-weight:600;font-size:.95rem;
+    border:1px solid var(--navy);cursor:pointer;transition:.2s ease;
+    white-space:nowrap;
+  }
+  .btn:hover{background:var(--navy-light);border-color:var(--navy-light);}
+  .btn.ghost{background:transparent;color:var(--navy);border:1px solid var(--navy);}
+  .btn.ghost:hover{background:var(--navy);color:var(--cream);}
+  .btn:focus-visible, a:focus-visible, button:focus-visible{outline:2px solid var(--gold);outline-offset:3px;}
+
+  /* HEADER */
+  header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(240,245,249,.95);backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--stone);
+  }
+  .header-container{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:24px 24px;
+    width:100%;
+  }
+  .logo{
+    display:flex;
+    flex-direction:column;
+  }
+  .logo-title{
+    font-family: var(--serif);
+    font-size: 1.8rem;
+    color: var(--navy);
+    letter-spacing: .01em;
+    line-height: 1.1;
+  }
+  .logo-subtitle{
+    font-family:var(--sans);
+    font-size:.90rem;
+    color:var(--green);
+    font-weight:600;
+    letter-spacing:.12em;
+    margin-top:4px;
+    text-transform:none;
+  }
+
+  /* NAVEGACIÓN Y DROPDOWNS */
+  .nav{
+    display:flex;
+    align-items:center;
+    gap:36px;
+    margin:0;
+  }
+  .nav > li{
+    position:relative;
+  }
+  .nav > li > a{
+    font-size:1.0rem;
+    font-weight:600;
+    color:var(--ink);
+    letter-spacing:.03em;
+    padding:8px 0;
+    display:inline-block;
+  }
+  .nav > li > a:hover,
+  .nav > li.active > a{
+    color:var(--green);
+  }
+  .caret{
+    display:inline-block;
+    width:0;height:0;
+    margin-left:5px;
+    vertical-align:middle;
+    border-top:4px solid;
+    border-right:4px solid transparent;
+    border-left:4px solid transparent;
+  }
+
+  /* SUBMENÚS */
+  .dropdown-menu{
+    display:none;
+    position:absolute;
+    top:100%;
+    right:0;
+    background:#fff;
+    min-width:200px;
+    box-shadow:0 8px 24px rgba(0,0,0,.08);
+    border:1px solid var(--stone);
+    border-radius:2px;
+    padding:8px 0;
+    z-index:100;
+  }
+  .dropdown.open .dropdown-menu{
+    display:block;
+  }
+  .dropdown-menu li a{
+    display:block;
+    padding:8px 18px;
+    font-size:.82rem;
+    color:var(--ink);
+    font-weight:500;
+    transition:background .2s;
+  }
+  .dropdown-menu li a:hover{
+    background:var(--cream);
+    color:var(--navy);
+  }
+  .dropdown-menu .divider{
+    height:1px;
+    margin:4px 0;
+    background:var(--stone);
+  }
+
+  .burger{display:none;background:none;border:none;font-size:1.5rem;color:var(--navy);cursor:pointer;}
+
+  @media (max-width:960px){
+    .header-container{padding:14px 20px;}
+    .navHeaderCollapse{
+      position:fixed;top:68px;left:0;right:0;
+      background:var(--cream);
+      padding:20px;
+      border-bottom:1px solid var(--stone);
+      display:none;
+    }
+    .navHeaderCollapse.in{display:block;}
+    .nav{flex-direction:column;align-items:flex-start;gap:16px;}
+    .dropdown-menu{position:relative;top:0;right:auto;left:0;box-shadow:none;border:none;background:transparent;padding-left:14px;}
+    .burger{display:block;}
+  }
+
+  /* HERO CON IMAGEN DE FONDO */
+  .hero {
+    position: relative;
+    background-image: url('financiera.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--cream);
+    padding: 100px 0 120px;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(60, 98, 127, 0.90);
+    z-index: 1;
+  }
+  .hero .wrap {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 60px;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+  }
+  .hero-copy h1 {
+    font-size: clamp(2.2rem, 4vw, 3.2rem);
+    color: var(--cream);
+    margin-bottom: 20px;
+  }
+  .hero-copy h1 em {
+    font-style: italic;
+    color: var(--gold);
+  }
+  .hero-copy .lead {
+    font-size: 1.05rem;
+    color: #c7d4d8;
+    margin-bottom: 32px;
+    line-height: 1.6;
+  }
+
+  /* Animación de aparición palabra por palabra (hero) */
+  .word-reveal .word{
+    display:inline-block;
+    opacity:0;
+    transform:translateY(.6em);
+    filter:blur(4px);
+    animation:wordIn .7s cubic-bezier(.22,1,.36,1) forwards;
+  }
+  @keyframes wordIn{
+    to{opacity:1;transform:translateY(0);filter:blur(0);}
+  }
+  .lead.fade-in{
+    opacity:0;
+    animation:fadeUp .8s ease forwards;
+    animation-delay:.9s;
+  }
+  @keyframes fadeUp{
+    from{opacity:0;transform:translateY(14px);}
+    to{opacity:1;transform:translateY(0);}
+  }
+
+  /* Sello Giratorio */
+  .seal-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity:0;
+    transform:scale(.85);
+    animation:sealIn .9s cubic-bezier(.22,1,.36,1) forwards;
+    animation-delay:.5s;
+  }
+  @keyframes sealIn{
+    to{opacity:1;transform:scale(1);}
+  }
+  .seal {
+    width: 260px;
+    height: 260px;
+    position: relative;
+  }
+  .seal svg {
+    width: 100%;
+    height: 100%;
+  }
+  .seal-ring {
+    transform-origin: 150px 150px;
+    animation: rotateSeal 25s linear infinite;
+  }
+  @keyframes rotateSeal {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+  @media (max-width: 900px) {
+    .hero .wrap {
+      grid-template-columns: 1fr;
+      text-align: left;
+    }
+    .seal-wrap {
+      justify-content: flex-start;
+    }
+  }
+  @media (max-width: 480px) {
+    .hero{padding:64px 0 72px;}
+    .logo-title{font-size:1.4rem;}
+    .logo-subtitle{font-size:.7rem;letter-spacing:.08em;}
+    .seal{width:min(220px, 62vw);height:min(220px, 62vw);}
+    section{padding:36px 0;}
+    #etapa{padding-top:56px;}
+    .stage-card{padding:26px 20px;}
+  }
+
+  /* SECCIONES & CARDS */
+  section{padding:50px 0;}
+  .section-head{max-width:640px;margin-bottom:48px;}
+  .section-head h2{font-size:clamp(1.7rem,3vw,2.3rem);}
+  .section-head p{color:#4a5a60;margin-top:12px;font-size:1.02rem;}
+
+  .stage-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--stone);border:1px solid var(--stone);}
+  @media (max-width:920px){.stage-grid{grid-template-columns:repeat(2,1fr);}}
+  @media (max-width:560px){.stage-grid{grid-template-columns:1fr;}}
+  .stage-card{background:var(--cream);padding:32px 26px;transition:background .2s;}
+  .stage-card:hover{background:#fff;}
+  .stage-card .icon svg {
+    width: 28px;
+    height: 28px;
+    stroke: var(--navy);
+    stroke-width: 1.8;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    margin-bottom: 14px;
+  }
+  .stage-card h3{font-family:var(--sans);font-weight:700;font-size:1rem;color:var(--ink);margin-bottom:8px;}
+  .stage-card p{font-size:.9rem;color:#5a6b71;margin-bottom:18px;min-height:44px;}
+  .stage-card a{font-size:.85rem;font-weight:600;color:var(--green);border-bottom:1px solid var(--green);padding-bottom:2px;}
+  .stage-card a:hover{color:var(--navy);border-color:var(--navy);}
+
+  #etapa{padding-top:80px;}
+
+  /* Animaciones al hacer scroll */
+  .reveal{
+    opacity:0;
+    transform:translateY(28px);
+    transition:opacity .7s cubic-bezier(.22,1,.36,1), transform .7s cubic-bezier(.22,1,.36,1);
+  }
+  .reveal.visible{
+    opacity:1;
+    transform:translateY(0);
+  }
+  .stage-grid.reveal-group .stage-card{
+    opacity:0;
+    transform:translateY(24px);
+    transition:opacity .6s ease, transform .6s ease;
+  }
+  .stage-grid.reveal-group.visible .stage-card:nth-child(1){transition-delay:.05s;}
+  .stage-grid.reveal-group.visible .stage-card:nth-child(2){transition-delay:.15s;}
+  .stage-grid.reveal-group.visible .stage-card:nth-child(3){transition-delay:.25s;}
+  .stage-grid.reveal-group.visible .stage-card{
+    opacity:1;
+    transform:translateY(0);
+  }
+  .faq-list.reveal-group .faq-item{
+    opacity:0;
+    transform:translateY(18px);
+    transition:opacity .5s ease, transform .5s ease;
+  }
+  .faq-list.reveal-group.visible .faq-item{
+    opacity:1;
+    transform:translateY(0);
+  }
+  .faq-list.reveal-group.visible .faq-item:nth-child(1){transition-delay:.05s;}
+  .faq-list.reveal-group.visible .faq-item:nth-child(2){transition-delay:.10s;}
+  .faq-list.reveal-group.visible .faq-item:nth-child(3){transition-delay:.15s;}
+  .faq-list.reveal-group.visible .faq-item:nth-child(4){transition-delay:.20s;}
+  .faq-list.reveal-group.visible .faq-item:nth-child(5){transition-delay:.25s;}
+  .faq-list.reveal-group.visible .faq-item:nth-child(6){transition-delay:.30s;}
+
+  /* FAQ */
+  .faq-list{border-top:1px solid var(--stone);}
+  .faq-item{border-bottom:1px solid var(--stone);}
+  .faq-q{
+    width:100%;text-align:left;background:none;border:none;cursor:pointer;
+    padding:22px 4px;display:flex;justify-content:space-between;align-items:center;gap:16px;
+    font-family:var(--sans);font-size:1rem;font-weight:600;color:var(--navy);
+  }
+  .faq-q .plus{font-size:1.3rem;color:var(--green);transition:transform .25s ease;flex-shrink:0;font-family:var(--serif);}
+  .faq-item.open .faq-q .plus{transform:rotate(45deg);}
+  .faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease;}
+  .faq-a p{padding:0 4px 22px;color:#4a5a60;font-size:.94rem;max-width:64ch;}
+
+  /* FOOTER */
+  footer{
+    background:var(--navy);color:#c7d4d8;padding:64px 0 48px;
+    border-top:1px solid rgba(240,245,249,.1);
+  }
+  .foot-container{display:flex;align-items:center;justify-content:space-between;gap:48px;}
+  .foot-brand-col{flex:1.1;}
+  .foot-brand-col .fname{font-family:var(--serif);color:var(--cream);font-size:1.8rem;line-height:1.1;margin-bottom:8px;}
+  .foot-brand-col .fsub{color:var(--gold);font-weight:600;font-size:.9rem;letter-spacing:.05em;}
+  .foot-divider{width:1px;align-self:stretch;background:rgba(240,245,249,.2);}
+  .foot-info-col{flex:1.2;display:flex;gap:40px;}
+  .foot-block{flex:1;}
+  .foot-block strong{display:block;font-family:var(--sans);font-size:.78rem;text-transform:uppercase;letter-spacing:.1em;color:var(--gold);margin-bottom:12px;}
+  .foot-block p{color:#c7d4d8;font-size:.92rem;line-height:1.6;margin-bottom:4px;}
+  .foot-bottom-bar{
+    max-width:var(--maxw);margin:48px auto 0;padding-top:24px;
+    border-top:1px solid rgba(240,245,249,.1);display:flex;justify-content:space-between;align-items:center;font-size:.82rem;
+  }
+  .foot-bottom-bar a:hover{color:var(--cream);}
+
+  @media (max-width:860px){
+    .foot-container{flex-direction:column;align-items:flex-start;gap:32px;}
+    .foot-divider{width:100%;height:1px;}
+    .foot-info-col{flex-direction:column;gap:24px;width:100%;}
+  }
+
+  /* WHATSAPP FLOAT */
+  .wa-float{
+    position:fixed;bottom:22px;right:22px;z-index:60;
+    background:var(--green);color:#fff;width:58px;height:58px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;box-shadow:0 6px 20px rgba(60,100,130,.25);
+    transition:transform .2s;
+  }
+  .wa-float:hover{transform:scale(1.06);}
+
+  /* Respeta a quienes prefieren menos movimiento */
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:.001ms !important;animation-iteration-count:1 !important;transition-duration:.001ms !important;scroll-behavior:auto !important;}
+    .seal-ring{animation:none;}
+    .word-reveal .word{opacity:1;transform:none;filter:none;}
+    .reveal, .reveal-group .stage-card, .reveal-group .faq-item{opacity:1;transform:none;}
+  }
+
+  /* --- Ajustes responsive adicionales --- */
+  @media (max-width:480px){
+    .logo-title{font-size:1.25rem;}
+    .logo-subtitle{font-size:.62rem;letter-spacing:.05em;}
+    .foot-bottom-bar{flex-direction:column;align-items:flex-start;gap:12px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-container wrap">
+    <a href="index.html" class="logo">
+      <span class="logo-title">Estudio Blanes & Asociados</span>
+      <span class="logo-subtitle">Asesoramiento Contable & Consultoría</span>
+    </a>
+
+    <button class="burger" id="burgerBtn" aria-label="Abrir menú">☰</button>
+
+    <nav class="navHeaderCollapse" id="navHeaderCollapse">
+      <ul class="nav">
+        <li class="active"><a href="index.html">INICIO</a></li>
+        <li><a href="quienes-somos.html">QUIENES SOMOS</a></li>
+        <li class="dropdown">
+          <a href="servicios-impositivos.html" class="dropdown-toggle">SERVICIOS <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="servicios-impositivos.html">IMPOSITIVOS</a></li>
+            <li class="divider"></li>
+            <li><a href="servicios-auditoria.html">AUDITORIA</a></li>
+            <li class="divider"></li>
+            <li><a href="servicios-contables.html">CONTABLES</a></li>
+            <li class="divider"></li>
+            <li><a href="servicios-laborales.html">LABORALES</a></li>
+            <li class="divider"></li>
+            <li><a href="servicios-societarios.html">SOCIETARIO</a></li>
+            <li class="divider"></li>
+            <li><a href="servicios-consultoria.html">CONSULTORIA</a></li>
+          </ul>
+        </li>
+        <li><a href="contacto.html">CONTACTO</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-copy">
+      <div class="eyebrow">Estudio contable · Bahía Blanca</div>
+      <h1 class="word-reveal" id="heroTitle">Más de 50 años de trayectoria avalan nuestro compromiso con la excelencia contable y fiscal.</h1>
+      <p class="lead fade-in">Somos un estudio contable de contadores en Bahía Blanca. Acompañamos a empresas, comercios y particulares en cada decisión contable, impositiva, previsional y de gestión financiera, con el trato directo de profesionales y un firme compromiso con tus resultados.</p>
+    </div>
+
+    <div class="seal-wrap">
+      <div class="seal">
+        <svg viewBox="0 0 300 300">
+          <g class="seal-ring">
+            <circle cx="150" cy="150" r="132" fill="none" stroke="rgba(143,184,216,.35)" stroke-width="1"/>
+            <path id="sealPath" d="M 150,26 A 124,124 0 1 1 149.9,26" fill="none"/>
+            <text font-family="IBM Plex Mono" font-size="11.5" letter-spacing="3" fill="#8FB8D8">
+              <textPath href="#sealPath" startOffset="0%">MÁS DE 50 AÑOS DE TRAYECTORIA · ATENCIÓN PERSONALIZADA ·</textPath>
+            </text>
+          </g>
+          <circle cx="150" cy="150" r="98" fill="none" stroke="#8FB8D8" stroke-width="1.4"/>
+          <g class="seal-center">
+            <text x="144" y="140" text-anchor="middle" font-family="Fraunces" font-size="46" font-weight="600" fill="#fff"><tspan id="sealCounter">0</tspan></text>
+            <text x="150" y="168" text-anchor="middle" font-family="IBM Plex Mono" font-size="11" letter-spacing="2" fill="rgba(255,255,255,.65)">AÑOS</text>
+            <line x1="112" y1="182" x2="188" y2="182" stroke="rgba(143,184,216,.4)" stroke-width="1"/>
+            <text x="150" y="200" text-anchor="middle" font-family="IBM Plex Mono" font-size="10" letter-spacing="1.5" fill="rgba(255,255,255,.5)">DE TRAYECTORIA</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="etapa">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>Asesoramiento a medida</h2>
+    </div>
+  </div>
+  <div class="wrap" style="padding:0;">
+    <div class="stage-grid reveal-group">
+      <div class="stage-card">
+        <div class="icon">
+          <svg viewBox="0 0 24 24"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+        </div>
+        <h3>Mi negocio está creciendo</h3>
+        <p>Necesito ordenar mis números y tomar mejores decisiones.</p>
+        <a href="contacto.html">Quiero ordenar mi negocio →</a>
+      </div>
+      <div class="stage-card">
+        <div class="icon">
+          <svg viewBox="0 0 24 24"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></svg>
+        </div>
+        <h3>Ya tengo una empresa</h3>
+        <p>Busco una gestión contable e impositiva profesional.</p>
+        <a href="contacto.html">Quiero optimizar mi gestion →</a>
+      </div>
+      <div class="stage-card">
+        <div class="icon">
+          <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </div>
+        <h3>Trabajador independiente</h3>
+        <p>Necesito delegar mi gestión y estar al día con AFIP.</p>
+        <a href="contacto.html">Quiero estar al día →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>Preguntas frecuentes</h2>
+    </div>
+    <div class="faq-list reveal-group" id="faqList">
+      <div class="faq-item">
+        <button class="faq-q">¿Puedo cambiar de contador? <span class="plus">+</span></button>
+        <div class="faq-a"><p>Sí, es un trámite habitual. Nos encargamos de gestionar el cambio de responsable ante AFIP y de pedir la documentación necesaria a tu contador anterior.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">¿Qué necesito para darme de alta como monotributista? <span class="plus">+</span></button>
+        <div class="faq-a"><p>DNI, CUIT (o trámite de obtención), clave fiscal y datos de tu actividad. Nosotros te guiamos en todo el proceso, incluida la categorización correcta.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">¿Qué pasa si tengo deudas impositivas? <span class="plus">+</span></button>
+        <div class="faq-a"><p>Analizamos tu situación y armamos un plan de regularización. Cuanto antes lo abordemos, más opciones tenemos para reducir intereses y evitar problemas mayores.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">¿Cada cuánto se deben presentar las declaraciones juradas? <span class="plus">+</span></button>
+        <div class="faq-a"><p>Depende de tu tipo de contribuyente y régimen (Monotributo, Responsable Inscripto, IVA, Ganancias). Te armamos un calendario fiscal personalizado para que nunca se te pase un vencimiento.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">¿Ofrecen atención a empresas y sociedades además de monotributistas? <span class="plus">+</span></button>
+        <div class="faq-a"><p>Sí, brindamos asesoramiento integral tanto a personas físicas (monotributistas y autónomos) como a PyMEs, sociedades anónimas y SRL de diversos rubros.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">¿Cómo es la modalidad de trabajo con el estudio? <span class="plus">+</span></button>
+        <div class="faq-a"><p>Trabajamos de forma ágil y digital para enviarte la documentación y los VEPs de pago, manteniendo siempre un canal de comunicación directo para resolver tus dudas rápidamente.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-container">
+    <div class="foot-brand-col">
+      <div class="fname">Estudio Blanes & Asociados</div>
+      <span class="fsub">Asesoramiento Contable & Consultoría</span>
+    </div>
+
+    <div class="foot-divider"></div>
+
+    <div class="foot-info-col">
+      <div class="foot-block">
+        <strong>Oficina Central</strong>
+        <p>Belgrano 533</p>
+        <p>Bahía Blanca, Argentina</p>
+      </div>
+      <div class="foot-block">
+        <strong>Canales de contacto</strong>
+        <p>📞 +54 291 447-1111</p>
+        <p>✉️ info@estudiobb.com.ar</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap foot-bottom-bar">
+    <span>© Estudio Blanes & Asociados. Todos los derechos reservados.</span>
+    <div style="display:flex; gap:20px;">
+      <a href="https://wa.me/5492914471111" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="#top">Volver arriba</a>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5492914471111?text=Hola%2C%20quer%C3%ADa%20consultar%20por%20los%20servicios%20del%20estudio." target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="#fff"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.28-1.38a9.9 9.9 0 0 0 4.76 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.13-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 18.03a8.2 8.2 0 0 1-4.17-1.14l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.37c0-4.54 3.7-8.24 8.25-8.24a8.19 8.19 0 0 1 5.83 2.42 8.18 8.18 0 0 1 2.41 5.83c0 4.55-3.7 8.21-8.27 8.21zm4.52-6.16c-.25-.12-1.47-.72-1.7-.81-.23-.08-.4-.12-.56.13-.17.25-.65.81-.79.97-.15.17-.29.19-.54.06-.25-.12-1.06-.39-2.01-1.24-.75-.66-1.25-1.48-1.4-1.73-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43-.14-.01-.31-.01-.48-.01-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.57.12.17 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.55.1.47-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.16-.48-.28z"/></svg>
+</a>
+
+<script>
+  // Menú móvil
+  document.getElementById('burgerBtn').addEventListener('click', function(){
+    document.getElementById('navHeaderCollapse').classList.toggle('in');
+  });
+
+  // Dropdown de servicios
+  document.querySelectorAll('.dropdown-toggle').forEach(function(toggle){
+    toggle.addEventListener('click', function(e){
+      e.preventDefault();
+      var parent = this.parentElement;
+      document.querySelectorAll('.dropdown.open').forEach(function(drop){
+        if(drop !== parent) drop.classList.remove('open');
+      });
+      parent.classList.toggle('open');
+    });
+  });
+  document.addEventListener('click', function(e){
+    if(!e.target.closest('.dropdown')){
+      document.querySelectorAll('.dropdown.open').forEach(function(drop){
+        drop.classList.remove('open');
+      });
+    }
+  });
+
+  // Acordeón de preguntas frecuentes
+  document.querySelectorAll('.faq-q').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var item = btn.parentElement;
+      var answer = item.querySelector('.faq-a');
+      var isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(function(openItem){
+        if(openItem !== item){
+          openItem.classList.remove('open');
+          openItem.querySelector('.faq-a').style.maxHeight = null;
+        }
+      });
+      if(isOpen){
+        item.classList.remove('open');
+        answer.style.maxHeight = null;
+      } else {
+        item.classList.add('open');
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+      }
+    });
+  });
+
+  // Texto del hero: aparece palabra por palabra al cargar la página
+  (function(){
+    var titleEl = document.getElementById('heroTitle');
+    var text = titleEl.textContent.trim();
+    var words = text.split(' ');
+    titleEl.innerHTML = words.map(function(word, i){
+      var delay = (0.15 + i * 0.045).toFixed(3);
+      return '<span class="word" style="animation-delay:' + delay + 's">' + word + '&nbsp;</span>';
+    }).join('');
+  })();
+
+  // Contador animado "+50" dentro del sello
+  (function(){
+    var counterEl = document.getElementById('sealCounter');
+    var target = 50;
+    var started = false;
+    var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    function runCount(){
+      if(started) return;
+      started = true;
+      if(prefersReducedMotion){
+        counterEl.textContent = '+' + target;
+        return;
+      }
+      var duration = 1600;
+      var startTime = null;
+      function step(timestamp){
+        if(!startTime) startTime = timestamp;
+        var progress = Math.min((timestamp - startTime) / duration, 1);
+        var eased = 1 - Math.pow(1 - progress, 3);
+        var current = Math.round(eased * target);
+        counterEl.textContent = '+' + current;
+        if(progress < 1){
+          requestAnimationFrame(step);
+        }
+      }
+      requestAnimationFrame(step);
+    }
+
+    var sealObserver = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting) runCount();
+      });
+    }, { threshold: .4 });
+    sealObserver.observe(document.querySelector('.seal'));
+  })();
+
+  // Animaciones al hacer scroll (secciones y tarjetas)
+  (function(){
+    var revealEls = document.querySelectorAll('.reveal, .reveal-group');
+    var scrollObserver = new IntersectionObserver(function(entries, obs){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){
+          entry.target.classList.add('visible');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: .15, rootMargin: '0px 0px -60px 0px' });
+    revealEls.forEach(function(el){ scrollObserver.observe(el); });
+  })();
+</script>
+
+</body>
+</html>
