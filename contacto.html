@@ -585,7 +585,7 @@
     }
   }
 
-  // ENVÍO ASÍNCRONO DEL FORMULARIO CON FORMATO JSON
+// ENVÍO ASÍNCRONO DEL FORMULARIO CON FORMATO JSON
   const contactForm = document.getElementById('contactForm');
   const submitBtn = document.getElementById('submitBtn');
   const formStatus = document.getElementById('formStatus');
@@ -596,8 +596,11 @@
     // Mostrar estado de carga
     submitBtn.disabled = true;
     submitBtn.innerText = 'Enviando...';
-    formStatus.classList.remove('show');
-    formStatus.style.display = 'none';
+    
+    // Limpiamos y preparamos el mensaje de estado para que sea visible
+    formStatus.innerText = '';
+    formStatus.className = 'form-status';
+    formStatus.style.display = 'block';
 
     // Convertir datos del formulario a JSON
     const formData = new FormData(contactForm);
@@ -616,24 +619,17 @@
       let res = await response.json();
       if (response.status === 200 && res.success) {
         formStatus.innerText = '✓ ¡Tu mensaje ha sido enviado con éxito! Nos contactaremos a la brevedad.';
-        formStatus.className = 'form-status success';
+        formStatus.className = 'form-status success show';
         contactForm.reset();
       } else {
         formStatus.innerText = 'Error: ' + (res.message || 'No se pudo enviar el mensaje.');
-        formStatus.className = 'form-status error';
+        formStatus.className = 'form-status error show';
       }
-      // Pequeño delay para que la transición de opacidad se note
-      requestAnimationFrame(function(){
-        formStatus.classList.add('show');
-      });
     })
     .catch(error => {
       console.error('Error en el envío:', error);
       formStatus.innerText = 'Ocurrió un error al conectar con el servidor. Revisá tu conexión o reintentá más tarde.';
-      formStatus.className = 'form-status error';
-      requestAnimationFrame(function(){
-        formStatus.classList.add('show');
-      });
+      formStatus.className = 'form-status error show';
     })
     .finally(() => {
       submitBtn.disabled = false;
