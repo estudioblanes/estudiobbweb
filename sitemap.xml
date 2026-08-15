@@ -1,47 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.estudiobb.com.ar/</loc>
+    <loc>https://estudioblanes.github.io/estudiobbweb/</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.estudiobb.com.ar/quienes-somos.html</loc>
+    <loc>https://estudioblanes.github.io/estudiobbweb/quienes-somos.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.estudiobb.com.ar/servicios-impositivos.html</loc>
+    <loc>https://estudioblanes.github.io/estudiobbweb/servicios-impositivos.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.estudiobb.com.ar/servicios-auditoria.html</loc>
+    <loc>https://estudioblanes.github.io/estudiobbweb/servicios-auditoria.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.estudiobb.com.ar/servicios-contables.html</loc>
+    <loc>https://estudioblanes.github.io/estudiobbweb/servicios-contables.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.estudiobb.com.ar/servicios-laborales.html</loc>
+    <loc>https://estudioblanes.github.io/estudiobbweb/servicios-laborales.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.estudiobb.com.ar/servicios-societarios.html</loc>
+    <loc>https://estudioblanes.github.io/estudiobbweb/servicios-societarios.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.estudiobb.com.ar/servicios-consultoria.html</loc>
+    <loc>https://estudioblanes.github.io/estudiobbweb/servicios-consultoria.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.estudiobb.com.ar/contacto.html</loc>
+    <loc>https://estudioblanes.github.io/estudiobbweb/contacto.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
